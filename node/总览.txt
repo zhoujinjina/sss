@@ -1,0 +1,27 @@
+fs.writeFileSync("./dj.txt","我是",err=>{})
+
+fs.appendFile("dj.txt","ddddd",err=>{console.log(err)})
+
+readFile('文件名',(err,data)=>{})
+
+rs=fs.createReadStream('./dj.txt')
+rs.on('data',(err,data)=>{})
+ws=fs.createWriteStream('./观书有感')
+
+fs.pipe(ws)
+
+fs.rename('oldpath', 'newpath',err=>{})//移动和重命名
+
+fs.unlink('oldpath',err=>{})//删除文件
+fs.rm('oldpath',err=>{})//删除文件  
+
+文件夹操作
+fs.mkdir('path',err=>{})//创建
+fs.readdir('path',(err,data)=>{})//读取
+fs.rm('path',{},err=>{})//删除
+
+查看文件状态
+fs.stat('path',(err,data)=>{})
+__dirname 当前文件所在目录的绝对路径
+path.resolve(__dirname,"相对路径")产生绝对路径
+

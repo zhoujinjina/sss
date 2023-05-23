@@ -1,0 +1,10 @@
+const fs=require('fs')
+fs.writeFile('./poetry.txt',"一天是不良人，一辈子都是！",err=>{
+    console.log(err)
+})
+fs.writeFileSync("./dj.txt","我是",err=>{})
+fs.writeFileSync("./dj.txt","我是",err=>{})
+fs.appendFile("dj.txt","ddddd",err=>{console.log(err)})
+fs.appendFile("dj.txt","ddddd",err=>{console.log(err)})
+fs.appendFile("dj.txt","ddddd",err=>{console.log(err)})
+fs.appendFile("dj.txt","ddddd",err=>{console.log(err)})

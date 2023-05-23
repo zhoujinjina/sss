@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>添加事项</title>
+  </head>
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+   .root{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+   }
+   h1{
+    display: block;
+   }
+   input{
+    width: 80vh;
+    height: 4vh;
+    margin-top: 30px;
+   }
+   select{
+    width: 80.5vh;
+    height: 5vh;
+    margin-top: 30px;
+    
+   }
+   option{
+
+        font-size: 13px;
+      
+    }
+  </style>
+  <body>
+    <div class="root">
+        <h1>添加记录</h1>
+    <form action="/account/create" method="post"> <br>
+      <input type="text" placeholder="事项" name="事项"/><br>
+      <input type="text" placeholder="发生时间" name="时间" /><br>
+      <select name="choose" id="choose" >
+        <option value="支出" selected>支出</option>
+        <option value="收入">收入</option>
+      </select><br>
+      <input type="number" placeholder="金额" name="金额" /><br>
+      <input type="textarea" placeholder="备注" name="备注"/><br>
+      <input type="submit">
+    </form>
+    </div>
+  </body>
+</html>
